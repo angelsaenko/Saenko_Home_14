@@ -1,0 +1,37 @@
+@import '../base/typography';
+.button {
+  border-radius: 5px;
+  border: 1px solid rgba(38, 38, 38, 0.3);
+  background-color: rgba(113, 113, 113, 0);
+  line-height: 60px;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #343434;
+    font-family: $font-title;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+@media (max-width: 360px) {
+  .button {
+    a {
+      padding: 0 5% 0 5% !important;
+    }
+  }
+}
+//@media (max-width: 950px) {
+//    .button-contact {
+//        margin-top: 30px;
+//    }
+//}
+//@media (max-width: 550px) {
+//  .button-contact {
+//    float: none !important;
+//    clear: both !important;
+//    margin: 0 auto;
+//  }
+//}
