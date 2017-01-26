@@ -1,29 +1,302 @@
 
-
 ul {
   list-style-type: none;
 }
 
-main{
-  .about-us{
-    .container{
+main {
+  .about-us {
+    .container {
       padding: 94px 15px 91px 15px;
     }
-    h3,.signature{
+    h3, .signature {
       text-align: center;
     }
-    .signature{
+    .signature {
       max-width: 640px;
       margin: 19px auto 0 auto;
       line-height: 28px;
     }
-    .button{
+    .button {
       margin: 25px auto 0 auto;
       max-width: 133px;
     }
 
   }
+  .our-features {
+    background-color: #e7eff1;
+    .container {
+      padding: 67px 15px 0 15px;
+    }
+    h3 {
+      padding-bottom: 65px
+    }
+    .item {
+      margin-top: 30px;
+    }
+
+    .title {
+      font-size: 17px;
+    }
+    .signature {
+      text-align: left;
+    }
+
+    .left {
+      img {
+        float: left;
+      }
+      .about-us {
+        overflow: hidden;
+        padding-left: 30px;
+      }
+
+    }
+    .right {
+      img {
+        float: right;
+      }
+      .about-us {
+        overflow: hidden;
+        padding: 0 30px 0 0;
+
+        .title, .signature {
+          text-align: right;
+          width: 100%;
+        }
+      }
+    }
+    .logo {
+      margin: 0 auto;
+      width: 130px;
+      height: 130px;
+      box-shadow: 0 0 65px #d6e4e7;
+      background-color: #ffffff;
+      border-radius: 50%;
+      line-height: 130px;
+      text-align: center;
+    }
+  }
+  .quick-contact {
+    .container {
+      padding: 70px 15px 120px 15px;
+    }
+    //.items {
+    //  border: 1px solid #e1eaec;
+    //  display: inline-block;
+    //  width: 33%;
+    //  text-align: center;
+    //}
+
+    .info-1, .info-2, .info-3 {
+      padding: 35px 0 35px 100px;
+      border: 1px solid #e1eaec;
+
+    }
+
+    .title {
+      font-size: 18px;
+      text-align: left;
+
+    }
+
+    .info-1 {
+      background: url("../images/icon-email.png") no-repeat;
+      background-position: 25px 35px;
+
+    }
+    .info-2 {
+      background: url("../images/icon-call.png") no-repeat;
+      background-position: 25px 35px;
+
+    }
+    .info-3 {
+      background: url("../images/icon-career.png") no-repeat;
+      background-position: 25px 35px;
+
+    }
+    @media (max-width: 725px) {
+
+      .info-1, .info-2, .info-3 {
+        width: 100%;
+      }
+    }
+
+    //.info-1, .info-2, .info-3 {
+    //  .title {
+    //    text-align: center;
+    //  }
+    //}
+
+  }
+
 }
+
+.testimoneals {
+  background-color: #03b6e7;
+
+  .container {
+    position: relative;
+    padding: 75px 15px;
+    background-image:url("../images/quote-icon.png");
+    background-repeat: no-repeat;
+
+  }
+  h3 {
+    color: #fff;
+  }
+  .photo {
+    text-align: center;
+    margin: 50px auto 0 auto;
+
+    .item {
+      display: inline-block;
+
+    }
+
+  }
+  .signature {
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: #ddf8ff;
+    max-width: 895px;
+  }
+  .client {
+    font-size: 14px;
+    margin-top: 15px;
+    padding-top: 10px;
+  }
+  .designation{
+    color:#fff;
+    text-align: center;
+    margin-top: 5px;
+  }
+  @media (max-width: 585px) {
+    .container{
+      background: none;
+    }
+  }
+
+}
+
+.services {
+  .container {
+    padding: 75px 15px;
+    h3 {
+      margin-bottom: 40px;
+    }
+    .all {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+    .title {
+      margin-top: 20px;
+    }
+    .button {
+      margin-top: 33px;
+    }
+
+  }
+}
+
+.our-blog {
+  background-color: #e7eff1;
+  .container {
+    padding: 75px 15px 75px 15px;
+
+    .item-1, .item-2 {
+
+      .title {
+        font-size: 18px;
+      }
+    }
+    .title {
+      margin: 5px 0 15px 0
+    }
+    .signature {
+      line-height: 28px;;
+    }
+    .col-md-6 {
+      height: 100%;
+      box-shadow: 0 0 70px #d4e2e5;
+      background-color: #ffffff;
+
+    }
+    .item-1 {
+      float: left;
+      padding-left: 0;
+
+      background-color: #ffffff;
+      img {
+        float: left;
+      }
+      .info {
+        padding-left: 240px;
+        padding-top: 43px;
+      }
+    }
+    .item-2 {
+
+      border-top: 3px solid #ffac56;
+      padding: 43px 0 0 45px;
+
+    }
+    .button {
+      margin-top: 50px;
+    }
+    @media (max-width: 395px) {
+      .item-1 {
+        .info {
+          padding-left: 210px;
+          padding-top: 10px;
+        }
+      }
+    }
+    @media (max-width: 360px) {
+
+      img {
+        width: 180px;
+      }
+      .item-1 {
+        .info {
+          padding-left: 185px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

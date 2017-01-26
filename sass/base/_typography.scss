@@ -1,37 +1,55 @@
 @import url('https://fonts.googleapis.com/css?family=Domine|Montserrat');
-h1,h2,h3,a{
+@import '../utils/variables';
+h1, h2, h3, h4 {
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,.client{
+  font-family: $main_font;
+}
+
+h1, h2, h3, a, .title {
   text-transform: uppercase;
 }
+.signature,.designation,.date {
+  font-family: $secondary_font;
 
-h1,h2,h3,a,.number{
-  font-family: $main_font;
-
-}
-.signature{
-  font-family: Domine, serif;;
 
 }
-h1{
+
+h1 {
   font-size: 16px;
   font-weight: 400;
 }
+
 h2{
   font-size: 72px;
   font-weight: 700;
 }
 
-h3{
+h3, .title {
   font-size: 32px;
   font-weight: 700;
 }
-.signature{
+
+.signature,.date,.designation {
   font-size: 15px;
   font-weight: 400;
 }
-.button{
-  a{
+.signature{
+  line-height: 28px;
+}
+
+
+
+.button {
+  a {
     font-size: 13px;
     font-weight: 400;
   }
 }
+.title{
+  font-size: 18px;
+}
+
 
