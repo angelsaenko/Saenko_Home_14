@@ -10,12 +10,12 @@ h1, h2, h3, h4 {
 
 
 header {
-
   background: url("../images/background-header.png") no-repeat;
-  background-size: cover;
-  background-position: center;
+  //background-position: center;
+  //background-size:cover ;
+
   .container {
-    padding: 30px 15px 245px 15px;
+    padding: 30px 15px 40px 15px;
 
   }
   nav {
@@ -93,16 +93,40 @@ header {
 
   }
   .flexslider{
+    background-color: transparent;
+    border: none;
+
+
     .slides{
+
       .items{
         background-color: #03b6e7;
-        line-height: 282px;
+        text-align: center;
+        height: 282px;
+        span{
+          color: #ffffff;
+          font-family: $main_font;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 33px;
+          text-transform: uppercase;
+        }
+
+
         img{
           width: 60px;
+          margin: 0 auto;
+
         }
       }
     }
+    .items:hover,.items.active{
+      background-color: #f6961b;
+    }
   }
+
+
+
 }
 
 @media (max-width: 530px) {
