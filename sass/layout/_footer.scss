@@ -152,6 +152,16 @@ footer {
     .container {
       padding-top: 20px;
     }
+    form {
+      input{
+        padding-left: 10px;
+      }
+      button {
+        position: relative!important;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
     .item-1 {
       float: none;
       margin: 10px !important;

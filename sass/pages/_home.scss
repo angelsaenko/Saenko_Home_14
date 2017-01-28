@@ -6,7 +6,7 @@ ul {
 main {
   .about-us {
     .container {
-      padding: 94px 15px 75px 15px;
+      padding: 94px 15px 60px 15px;
     }
     h3, .signature {
       text-align: center;
@@ -17,8 +17,19 @@ main {
       line-height: 28px;
     }
     .button {
-      margin: 25px auto 0 auto;
+      margin: 25px auto 70px auto;
       max-width: 133px;
+    }
+    #slider2 {
+      margin: 0;
+      .flex-control-paging {
+        display: none;
+      }
+      ol {
+        li {
+          padding: 0 20px;
+        }
+      }
     }
 
   }
@@ -141,13 +152,223 @@ main {
         }
         .button {
           display: block !important;
-          float: none!important;
-          margin: 0 auto!important;;
+          float: none !important;
+          margin: 0 auto !important;;
           line-height: 40px;
         }
       }
     }
 
+  }
+
+  .project {
+
+    .container {
+      padding: 75px 15px;
+    }
+    h3{
+      margin-bottom: 30px;
+    }
+    .item-1 {
+      padding: 0;
+      margin: 0;
+      color:#fff;
+
+      background-color: #f6961b;
+      img {
+        width: 100%;
+      }
+
+      .title{
+        margin-top: 30px;
+        padding-left:28px
+      }
+      .signature{
+        padding: 18px 30px 50px 28px;
+      }
+    }
+    .item-2{
+      .title{
+        color: #343a3b;
+        padding-left: 30px;
+      }
+      .signature{
+        color:#838b8c;
+        padding: 0 95px 0 30px;
+      }
+    }
+    .button{
+      margin: 95px auto 0 90px;
+    }
+
+  }
+
+  .services {
+    background-color: #fffaf3;
+    .container {
+      padding: 75px 25px;
+      a {
+        text-align: center;
+      }
+      h3 {
+        margin-bottom: 40px;
+      }
+      .all {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      .title {
+        margin-top: 40px;
+        color: #343a3b;
+        a {
+          text-decoration: none;
+          color: #343a3b;
+          font-family: $main_font;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 33px;
+          text-transform: uppercase;
+        }
+      }
+      .button {
+        margin-top: 33px;
+      }
+
+    }
+    @media (max-width: 500px) {
+      .container {
+        padding: 30px 15px;
+        h3 {
+          margin-bottom: 10px;
+        }
+        .item {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .testimoneals {
+    background-color: #03b6e7;
+
+    .container {
+      position: relative;
+      padding: 75px 15px;
+      background-image: url("../images/quote-icon.png");
+      background-repeat: no-repeat;
+
+    }
+    h3 {
+      color: #fff;
+    }
+    .photo {
+      text-align: center;
+      margin: 50px auto 0 auto;
+
+      .item {
+        display: inline-block;
+
+      }
+
+    }
+    .signature {
+      margin: 20px auto 0 auto;
+      text-align: center;
+      color: #ddf8ff;
+      max-width: 895px;
+    }
+    .client {
+      font-size: 14px;
+      margin-top: 15px;
+      padding-top: 10px;
+    }
+    .designation {
+      color: #fff;
+      text-align: center;
+      margin-top: 5px;
+    }
+    @media (max-width: 585px) {
+      .container {
+        background: none;
+      }
+    }
+
+  }
+
+  .our-blog {
+    background-color: #e7eff1;
+    .container {
+      padding: 75px 15px 75px 25px;
+
+      .item {
+        height: 295px;
+        background-color: #ffffff;
+        padding-left: 0;
+        .info {
+          padding: 25px 0 25px 0;
+        }
+
+        .title {
+          font-size: 18px;
+        }
+      }
+      .border-item-1 {
+
+      }
+      .title {
+        margin: 5px 0 15px 0
+      }
+      .signature {
+        line-height: 28px;;
+      }
+
+      img {
+        float: left;
+
+      }
+      .info-1 {
+        padding-left: 240px;
+        padding-top: 43px;
+      }
+      .info-2 {
+        padding-left: 40px;
+        padding-top: 43px;
+      }
+
+    }
+    .border-item-2 {
+      box-shadow: 0 0 70px #d4e2e5;
+      border-top: 3px solid #ffac56;
+
+    }
+    .border-item-1 {
+      border-top: 3px solid #16d428;
+
+    }
+
+    .button {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px 15px;
+      }
+
+    }
+    @media (max-width: 446px) {
+      .container {
+        .info-1 {
+          padding: 10px 0 0 200px;
+        }
+        .info-2 {
+          padding-bottom: 10px;
+        }
+        img {
+          width: 170px;
+        }
+      }
+    }
   }
 
   .quick-contact {
@@ -215,152 +436,10 @@ main {
 
 }
 
-.testimoneals {
-  background-color: #03b6e7;
 
-  .container {
-    position: relative;
-    padding: 75px 15px;
-    background-image: url("../images/quote-icon.png");
-    background-repeat: no-repeat;
 
-  }
-  h3 {
-    color: #fff;
-  }
-  .photo {
-    text-align: center;
-    margin: 50px auto 0 auto;
 
-    .item {
-      display: inline-block;
 
-    }
-
-  }
-  .signature {
-    margin: 20px auto 0 auto;
-    text-align: center;
-    color: #ddf8ff;
-    max-width: 895px;
-  }
-  .client {
-    font-size: 14px;
-    margin-top: 15px;
-    padding-top: 10px;
-  }
-  .designation {
-    color: #fff;
-    text-align: center;
-    margin-top: 5px;
-  }
-  @media (max-width: 585px) {
-    .container {
-      background: none;
-    }
-  }
-
-}
-
-.services {
-  .container {
-    padding: 75px 15px;
-    h3 {
-      margin-bottom: 40px;
-    }
-    .all {
-      display: inline-block;
-      vertical-align: bottom;
-    }
-    .title {
-      margin-top: 20px;
-    }
-    .button {
-      margin-top: 33px;
-    }
-
-  }
-  @media (max-width: 500px) {
-    .container {
-      padding: 30px 15px;
-      h3 {
-        margin-bottom: 10px;
-      }
-      .item {
-        width: 100%;
-      }
-    }
-  }
-}
-
-.our-blog {
-  background-color: #e7eff1;
-  .container {
-    padding: 75px 15px 75px 15px;
-
-    .item-1, .item-2 {
-
-      .title {
-        font-size: 18px;
-      }
-    }
-    .title {
-      margin: 5px 0 15px 0
-    }
-    .signature {
-      line-height: 28px;;
-    }
-    .col-md-6 {
-      height: 100%;
-      box-shadow: 0 0 70px #d4e2e5;
-      background-color: #ffffff;
-
-    }
-    .item-1 {
-      float: left;
-      padding-left: 0;
-
-      background-color: #ffffff;
-      img {
-        float: left;
-      }
-      .info {
-        padding-left: 240px;
-        padding-top: 43px;
-      }
-    }
-    .item-2 {
-
-      border-top: 3px solid #ffac56;
-      padding: 43px 0 0 45px;
-
-    }
-    .button {
-      margin-top: 50px;
-    }
-    @media (max-width: 395px) {
-
-      .item-1 {
-        .info {
-          padding-left: 210px;
-          padding-top: 10px;
-        }
-      }
-    }
-
-    @media (max-width: 360px) {
-      img {
-        width: 180px;
-      }
-      .item-1 {
-        .info {
-          padding-left: 185px;
-          padding-top: 10px;
-        }
-      }
-    }
-  }
-}
 
 
 
