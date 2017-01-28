@@ -54,13 +54,21 @@ h3 {
 #slider3, #slider1 {
   ol {
     li {
+      height: 16px;
+      vertical-align: top;
       a {
+        width: 16px;
+        height: 16px;
         background-color: transparent;
         border: 2px solid #fff;
+        box-sizing: border-box;
       }
       a.flex-active, a:hover {
-        border: 2px solid #16d428;
-        background-color: transparent;
+        // border: 2px solid #16d428;
+        border: none;
+        background-image: url("../images/carousel-active.png");
+        background-position: 0 -1px;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -78,7 +86,6 @@ h3 {
     bottom: 20px;
   }
 }
-
 .elem-project {
   border: 2px solid #ffac56;
   border-radius: 23px;
@@ -103,5 +110,4 @@ h3 {
     color:#ffac56!important;
   }
 }
-
 

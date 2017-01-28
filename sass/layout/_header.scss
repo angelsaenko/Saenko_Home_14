@@ -14,7 +14,7 @@ header {
   //background-size:cover ;
 
   .container {
-    padding: 30px 15px 40px 15px;
+    padding: 30px 15px 94px 15px;
 
   }
   nav {
@@ -95,8 +95,10 @@ header {
   #slider1 {
     background-color: transparent;
     border: none;
-    margin-bottom: 0;
-
+    margin-top: 60px;
+    .flex-control-nav {
+      bottom: -100px;
+    }
     .slides {
       .items {
         background-color: #03b6e7;
