@@ -79,5 +79,29 @@ h3 {
   }
 }
 
+.elem-project {
+  border: 2px solid #ffac56;
+  border-radius: 23px;
+  background-color: transparent;
+  max-width: 110px;
+  position: absolute;
+  top: 20px;
+  line-height: 28px;
+  left: 20px;
+
+
+
+  a {
+    font-family: $secondary_font;
+    font-size: 12px;
+    line-height: 28px;
+    color: #fff!important;
+    text-decoration: none;
+    padding: 0 20px;
+  }
+  a:hover{
+    color:#ffac56!important;
+  }
+}
 
 
