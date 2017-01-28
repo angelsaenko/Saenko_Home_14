@@ -4,89 +4,168 @@
 @import '../components/single-line-form';
 
 footer {
-  background-color: #404040;
-  .footer-border {
-    background: url("../images/border-footer.png");
-    background-position: left;
-    background-repeat: repeat-x;
-    height: 6px;
-    width: 100%;
-
-  }
+  background-color: #262829;
   .container {
-    padding: 40px 136px 65px 130px;
-    .title {
-      margin-top: 10px;
-      text-align: left;
-      padding-left: 0;
-      color: #ffffff;
+    padding: 75px 15px 25px 15px;
+    .border {
+      border-bottom: 1px solid #323334;
+      padding-bottom: 65px;
 
-      font-size: 14px;
+    }
+    .item-1 {
+      margin: 100px 0;
+    }
+    .item-2 {
+      padding-right: 0;
+      .descr {
+        max-width: 88px;
+      }
+    }
+    .item-3 {
+      padding-right: 0;
+      padding-left: 0;
+      .descr {
+        max-width: 123px;
+      }
+    }
+    .item-4 {
+      padding-left: 0;
+      button:hover {
+        background-color: red;
+      }
+    }
+
+    .title, .descr {
+      font-family: $main_font;
+    }
+    .title {
+      color: #e1e1e1;
+
+      font-size: 20px;
       font-weight: 700;
+      line-height: 33px;
       text-transform: uppercase;
     }
     .descr {
-      margin-top: 25px;
-      color: #ffffff;
+      color: #838b8c;
 
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 400;
-      line-height: 34px;
-      max-width: 130px;
-    }
+      line-height: 30px;
+      text-transform: uppercase;
 
-    .column-2 {
-      padding-left: 60px;
-      padding-right: 40px;
     }
-    .column-3 {
-      padding-right: 60px;
-      .single-line-form {
-        line-height: 42px;
-        margin-top: 35px;
-        button {
-          padding-left: 34px;
-          padding-right: 34px;
-        }
-        ul {
-          padding: 0;
-          float: left;
-          margin-top: 30px;
-        }
-        li {
-          float: left;
-          margin-right: 10px;
-          cursor: pointer;
-          a {
-            display: inline-block;
-            text-decoration: none;
-            line-height: 51px;
-            width: 51px;
-            vertical-align: middle;
-            text-align: center;
-            color: white;
-          }
-        }
-        li:hover{
-          background-color: #e7434e;
-        }
-        .facebook, .twitter, .google-plus {
-          display: inline-block;
-          width: 51px;
-          height: 51px;
-          border-radius: 50%;
-          background-color: #717171;
+    .copyright, .footer-menu {
+      margin-top: 10px;
+    }
+    .copyright {
+      float: left;
+      text-transform: none;
+      line-height: 1;
+      @media (max-width: 815px) {
+        float: none
+      }
+
+    }
+    ul {
+      padding-left: 0px;
+    }
+    .footer-menu {
+      float: right;
+      margin-bottom: 0;
+      display: inline-block;
+      @media (max-width: 815px) {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+
+      }
+      a {
+        text-decoration: none;
+      }
+      li {
+        float: left;
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 13px;
+        font-weight: 400;
+        cursor: pointer;
+        line-height: 1;
+        a:hover {
+          color: #ffac55;
         }
 
       }
-    }
-    @media (max-width: 768px) {
-      .column-2, .column-3 {
-        padding: 0 !important;
+      .facebook {
+        a {
+          color: #385da5;
+        }
       }
-      .column-3 {
-        padding: 5% !important;
+      .twitter {
+        a {
+          color: #00b5da;
+        }
+      }
+      .instargam {
+        a {
+          color: #d4c5a8;
+        }
+      }
+      .linkedin {
+        a {
+          color: #1883bb;
+        }
+      }
+      .google-plus {
+        a {
+          color: #e4463b;
+        }
+      }
+
+    }
+
+  }
+
+  @media (max-width: 992px) {
+    .item-4 {
+      text-align: center;
+      .descr {
+        padding-left: 20px;
+      }
+
+    }
+    .item-3 {
+      padding-right: 100px;
+    }
+  }
+  @media (max-width: 581px) {
+    .footer-menu {
+      li {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
       }
     }
   }
+
+  @media (max-width: 470px) {
+    .container {
+      padding-top: 20px;
+    }
+    .item-1 {
+      float: none;
+      margin: 10px !important;
+
+    }
+    .item-2 {
+      width: 50%;
+
+    }
+  }
 }
+
+
+
+
+
+

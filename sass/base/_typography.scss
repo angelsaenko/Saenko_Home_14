@@ -4,14 +4,14 @@ h1, h2, h3, h4 {
   padding: 0;
   margin: 0;
 }
-h1,h2,h3,.client{
+h1,h2,h3,.client,.footer-menu{
   font-family: $main_font;
 }
 
 h1, h2, h3, a, .title {
   text-transform: uppercase;
 }
-.signature,.designation,.date {
+.signature,.designation,.date,.questions,.copyright {
   font-family: $secondary_font;
 
 
